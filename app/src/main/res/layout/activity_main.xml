@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="#1e1e1e">
+
+    <!-- LEFT HALF -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#4caf50"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="monospace" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:id="@+id/et_server_ip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="mc.hypixel.net"
+                android:textColorHint="#888888"
+                android:textColor="#ffffff"
+                android:background="#2d2d2d"
+                android:padding="12dp"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/et_server_port"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="25565"
+                android:text="25565"
+                android:textColorHint="#888888"
+                android:textColor="#ffffff"
+                android:background="#2d2d2d"
+                android:padding="12dp"
+                android:inputType="number"
+                android:singleLine="true"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Protocol"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+        
+        <Spinner
+            android:id="@+id/spinner_protocol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2d2d2d"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btn_fetch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fetch"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:background="#4caf50"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- RIGHT HALF -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OUTPUT"
+            android:textColor="#4caf50"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+        
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#2d2d2d"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ready"
+                android:textSize="12sp"
+                android:textColor="#cccccc"
+                android:fontFamily="monospace" />
+
+        </ScrollView>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DEBUG INFO"
+            android:textColor="#ff9800"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone" />
+        
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#1a1a1a"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_debug"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="9sp"
+                android:textColor="#888888"
+                android:fontFamily="monospace" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
