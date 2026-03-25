@@ -1,0 +1,20 @@
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material">
+        <item name="android:colorPrimary">#009688</item>
+        <item name="android:colorPrimaryDark">#00796B</item>
+        <item name="android:colorAccent">#009688</item>
+        <item name="android:windowBackground">#303030</item>
+        
+        <!-- Focus visibility enhancements -->
+        <item name="android:colorControlHighlight">#80FF4081</item>
+        <item name="android:colorControlActivated">#FF4081</item>
+        <item name="android:colorFocusedHighlight">#FFFF4081</item>
+        
+        <!-- Make all focusable views scale when focused -->
+        <!-- <item name="android:stateListAnimator">@animator/focus_scale</item> -->
+        
+        <!-- Ensure focus is visible on all controls -->
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+</resources>
