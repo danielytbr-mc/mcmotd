@@ -3,10 +3,11 @@ plugins {
 }
 
 android {
+	namespace "io.github.danielytbr.mcmotd"
     compileSdk 31
 
     defaultConfig {
-        applicationId "io.github.danielytbr.mcmotd"
+        
         minSdk 21
         targetSdk 31
         versionCode 1
