@@ -3,7 +3,7 @@
         <item name="android:colorPrimary">#009688</item>
         <item name="android:colorPrimaryDark">#00796B</item>
         <item name="android:colorAccent">#009688</item>
-        <item name="android:windowBackground">#303030</item>
+        <item name="android:windowBackground">@color/windowbg</item>
         
         <!-- Focus visibility enhancements -->
         <item name="android:colorControlHighlight">#80FF4081</item>
