@@ -1,12 +1,11 @@
 name: Release Build
 
 on:
-  workflow_dispatch:  # Manual trigger only
+  workflow_dispatch:
     inputs:
       version:
         description: 'Version name'
         required: true
-        default: '1.0.0'
 
 jobs:
   build:
@@ -22,6 +21,9 @@ jobs:
       
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
+
+      - name: Decode Keystore
+        run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > keystore.jks
       
       - name: Build Release APK
         run: gradle assembleRelease
