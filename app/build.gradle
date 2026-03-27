@@ -3,28 +3,17 @@ plugins {
 }
 
 android {
-	namespace "io.github.danielytbr.mcmotd"
+    namespace "io.github.danielytbr.mcmotd"
     compileSdk 33
 
     defaultConfig {
-        
         minSdk 21
         targetSdk 33
         versionCode 1
         versionName "1.0"
     }
 
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-      signingConfigs {
+    signingConfigs {
         release {
             storeFile file("keystore.jks")
             storePassword System.getenv("KEYSTORE_PASSWORD")
@@ -32,20 +21,25 @@ android {
             keyPassword System.getenv("KEY_PASSWORD")
         }
     }
-    
+
     buildTypes {
         release {
             signingConfig signingConfigs.release
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
-		debug {
-			minifyEnabled false
-		}
+        debug {
+            minifyEnabled false
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
 dependencies {
-	// CodeAssist does NOT support adding dependencies here,
-	// try using the library manager instead
+    // CodeAssist does NOT support adding dependencies here,
+    // try using the library manager instead
 }
