@@ -2,4 +2,8 @@
     <string name="app_name">MCMOTD</string>
     <string name="address">Address</string>
     <string name="protocol">Protocol</string>
+    <string name="fetch">Fetch</string>
+    <string name="output">Output</string>
+    <string name="ready">Ready</string>
+    <string name="debug_info">Debug</string>
 </resources>
