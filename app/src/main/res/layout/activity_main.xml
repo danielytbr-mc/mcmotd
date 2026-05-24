@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Address"
+            android:text="@string/address"
             android:textColor="#ffffff"
             android:textSize="14sp"
             android:layout_marginBottom="8dp" />
@@ -72,7 +72,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Protocol"
+            android:text="@string/protocol"
             android:textColor="#ffffff"
             android:textSize="14sp"
             android:layout_marginBottom="8dp" />
@@ -88,7 +88,7 @@
             android:id="@+id/btn_fetch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fetch"
+            android:text="@string/fetch"
             android:textSize="14sp"
             android:textColor="#ffffff"
             android:background="#4caf50"
@@ -115,7 +115,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="OUTPUT"
+            android:text="@string/output"
             android:textColor="#4caf50"
             android:textSize="14sp"
             android:textStyle="bold"
@@ -132,7 +132,7 @@
                 android:id="@+id/tv_result"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ready"
+                android:text="@string/ready"
                 android:textSize="12sp"
                 android:textColor="#cccccc"
                 android:fontFamily="monospace" />
@@ -142,7 +142,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DEBUG INFO"
+            android:text="@string/debug_info"
             android:textColor="#ff9800"
             android:textSize="11sp"
             android:textStyle="bold"
