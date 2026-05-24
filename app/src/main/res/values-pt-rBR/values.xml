@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MCMOTD</string>
+    <string name="address">Endereço</string>
+    <string name="protocol">Protocolo</string>
+    <string name="fetch">Iniciar</string>
+    <string name="output">Saída</string>
+    <string name="ready">Pronto</string>
+    <string name="debug_info">Debug</string>
+</resources>
