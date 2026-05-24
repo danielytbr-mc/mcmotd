@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MCMOTD</string>
+    <string name="address">Address</string>
+    <string name="protocol">Protocol</string>
 </resources>
