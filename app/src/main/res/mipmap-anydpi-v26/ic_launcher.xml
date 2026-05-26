@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Optional solid color background (or use a drawable) -->
-    <background android:drawable="@color/ic_launcher_background"/>
+    <!--<background android:drawable="@color/ic_launcher_background"/>
     <!-- Your existing PNG-based foreground -->
-    <foreground android:drawable="@mipmap/ic_launcher"/>
+    <!--<foreground android:drawable="@mipmap/ic_launcher"/>
     <!-- Your new monochrome vector -->
     <monochrome android:drawable="@drawable/ic_launcher_monochrome"/>
 </adaptive-icon>
