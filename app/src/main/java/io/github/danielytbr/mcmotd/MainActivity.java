@@ -83,7 +83,7 @@ public class MainActivity extends Activity {
         
         // Validate inputs
         if (ip.isEmpty()) {
-            Toast.makeText(this, "Please enter server IP", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Enter server IP", Toast.LENGTH_SHORT).show();
             return;
         }
         
@@ -118,14 +118,14 @@ public class MainActivity extends Activity {
                     @Override
                     public void run() {
                         if (!isReachable) {
-                            tvDebug.append("✗ Cannot reach server at " + ip + ":" + finalPort + "\n");
-                            tvDebug.append("  • Check if the server is online\n");
-                            tvDebug.append("  • Check your internet connection\n");
-                            tvDebug.append("  • Try a different server\n\n");
+                            tvDebug.append("Cannot reach server at " + ip + ":" + finalPort + "\n");
+                            tvDebug.append("- Check if the server is online\n");
+                            tvDebug.append("- Check your internet connection\n");
+                            tvDebug.append("- Try a different server\n\n");
                             tvDebug.setTextColor(Color.RED);
                         } else {
-                            tvDebug.append("✓ Server is reachable!\n");
-                            tvDebug.append("  Attempting to query server info...\n\n");
+                            tvDebug.append("Server is reachable\n");
+                            tvDebug.append("Attempting to query server info...\n\n");
                             tvDebug.setTextColor(Color.GREEN);
                         }
                     }
