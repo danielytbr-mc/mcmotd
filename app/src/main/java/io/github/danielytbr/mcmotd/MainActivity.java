@@ -298,10 +298,6 @@ public class MainActivity extends Activity {
             JSONObject json = new JSONObject(jsonString);
             StringBuilder result = new StringBuilder();
             
-            result.append("═══════════════════════════════════════\n");
-            result.append("     MINECRAFT SERVER INFORMATION      \n");
-            result.append("═══════════════════════════════════════\n\n");
-            
             // Parse MOTD
             String motd = "";
             if (json.has("description")) {
@@ -326,9 +322,6 @@ public class MainActivity extends Activity {
             }
             
             motd = cleanMinecraftColors(motd);
-            
-            result.append("📝 MOTD:\n");
-            result.append("───────────────────────────────────────\n");
             result.append(motd).append("\n\n");
             
             // Parse players
@@ -337,15 +330,11 @@ public class MainActivity extends Activity {
                 int online = players.getInt("online");
                 int max = players.getInt("max");
                 
-                result.append("👥 PLAYER COUNT:\n");
-                result.append("───────────────────────────────────────\n");
                 result.append(online).append(" / ").append(max).append(" players online\n\n");
                 
                 if (players.has("sample") && players.getJSONArray("sample").length() > 0) {
-                    result.append("📋 ONLINE PLAYERS (Sample):\n");
                     result.append("───────────────────────────────────────\n");
-                    int count = Math.min(players.getJSONArray("sample").length(), 10);
-                    for (int i = 0; i < count; i++) {
+                    for (int i = 0; i < players.getJSONArray("sample").length(); i++) {
                         JSONObject player = players.getJSONArray("sample").getJSONObject(i);
                         result.append("- ").append(player.getString("name")).append("\n");
                     }
