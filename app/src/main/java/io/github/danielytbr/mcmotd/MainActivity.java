@@ -172,7 +172,7 @@ public class MainActivity extends Activity {
                                 runOnUiThread(new Runnable() {
                                     @Override
                                     public void run() {
-                                        tvDebug.append("✓ Success with " + protoName + "!\n\n");
+                                        tvDebug.append("Success with " + protoName + "!\n\n");
                                     }
                                 });
                                 break;
