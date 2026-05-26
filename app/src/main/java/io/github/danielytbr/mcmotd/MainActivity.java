@@ -49,8 +49,8 @@ public class MainActivity extends Activity {
         
         // Setup protocol spinner
         String[] protocols = {
-            "1.16.5 (Protocol 754) - Most compatible",
-            "1.8.9 (Protocol 47) - Old servers",
+            "1.16.5 (Protocol 754)",
+            "1.8.9 (Protocol 47)",
             "1.12.2 (Protocol 340)",
             "1.13.2 (Protocol 404)",
             "1.14.4 (Protocol 578)",
