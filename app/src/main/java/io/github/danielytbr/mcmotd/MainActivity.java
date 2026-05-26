@@ -183,7 +183,7 @@ public class MainActivity extends Activity {
                             runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
-                                    tvDebug.append("✗ Failed: " + (error != null ? error : "Unknown error") + "\n");
+                                    tvDebug.append("Failed: " + (error != null ? error : "Unknown error") + "\n");
                                 }
                             });
                         }
@@ -226,7 +226,7 @@ public class MainActivity extends Activity {
                             tvResult.setTextColor(Color.WHITE);
                             progressBar.setVisibility(View.GONE);
                             btnFetch.setEnabled(true);
-                            tvDebug.append("✓ Server info fetched successfully!\n");
+                            tvDebug.append("Server info fetched successfully!\n");
                             Toast.makeText(MainActivity.this, "Server info fetched!", Toast.LENGTH_SHORT).show();
                         }
                     });
@@ -245,10 +245,10 @@ public class MainActivity extends Activity {
                             }
                             
                             errorMsg += "Troubleshooting:\n";
-                            errorMsg += "• Try a different protocol version\n";
-                            errorMsg += "• Some servers block ping requests\n";
-                            errorMsg += "• Try a known working server like mc.hypixel.net\n";
-                            errorMsg += "• Check if the server is running Minecraft Java Edition\n";
+                            errorMsg += "- Try a different protocol version\n";
+                            errorMsg += "- Some servers block ping requests\n";
+                            errorMsg += "- Try a known working server like mc.hypixel.net\n";
+                            errorMsg += "- Check if the server is running Minecraft Java Edition\n";
                             
                             tvResult.setText(errorMsg);
                             tvResult.setTextColor(Color.RED);
@@ -347,7 +347,7 @@ public class MainActivity extends Activity {
                     int count = Math.min(players.getJSONArray("sample").length(), 10);
                     for (int i = 0; i < count; i++) {
                         JSONObject player = players.getJSONArray("sample").getJSONObject(i);
-                        result.append("  • ").append(player.getString("name")).append("\n");
+                        result.append("- ").append(player.getString("name")).append("\n");
                     }
                     result.append("\n");
                 }
