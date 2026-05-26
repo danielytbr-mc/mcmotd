@@ -345,7 +345,7 @@ public class MainActivity extends Activity {
             // Parse version
             if (json.has("version")) {
                 JSONObject version = json.getJSONObject("version");
-                result.append("🔄 SERVER VERSION:\n");
+                result.append("SERVER VERSION:\n");
                 result.append("───────────────────────────────────────\n");
                 result.append(version.getString("name")).append("\n");
                 result.append("Protocol: ").append(version.getInt("protocol")).append("\n\n");
