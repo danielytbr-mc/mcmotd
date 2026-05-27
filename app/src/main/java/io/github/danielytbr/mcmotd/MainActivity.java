@@ -42,10 +42,10 @@ public class MainActivity extends Activity {
         tvDebug.setMovementMethod(new ScrollingMovementMethod());
         
         // Set default port
-        etServerPort.setText("25565");
+        etServerPort.setText(R.string.default_port);
         
         // Set test servers for debugging
-        etServerIp.setText("mc.hypixel.net");
+        etServerIp.setText(R.string.default_ip);
         
         // Setup protocol spinner
         String[] protocols = {
