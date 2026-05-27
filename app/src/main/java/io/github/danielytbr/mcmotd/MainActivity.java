@@ -48,21 +48,18 @@ public class MainActivity extends Activity {
         etServerIp.setText(R.string.default_ip);
         
         // Setup protocol spinner
-        String protocolLabel = getString(R.string.protocol);  // e.g., "Protocol" or "Protocolo"
-String autoLabel = getString(R.string.auto);          // e.g., "Auto" or "Automático"
-
 String[] protocols = {
-    "1.16.5 (" + protocolLabel + " 754)",
-    "1.8.9 (" + protocolLabel + " 47)",
-    "1.12.2 (" + protocolLabel + " 340)",
-    "1.13.2 (" + protocolLabel + " 404)",
-    "1.14.4 (" + protocolLabel + " 578)",
-    "1.15.2 (" + protocolLabel + " 736)",
-    "1.17.1 (" + protocolLabel + " 756)",
-    "1.18.2 (" + protocolLabel + " 758)",
-    "1.19.4 (" + protocolLabel + " 762)",
-    "1.20.4 (" + protocolLabel + " 765)",
-    autoLabel
+    "1.16.5 (" + getString(R.string.protocol) + " 754)",
+    "1.8.9 (" + getString(R.string.protocol) + " 47)",
+    "1.12.2 (" + getString(R.string.protocol) + " 340)",
+    "1.13.2 (" + getString(R.string.protocol) + " 404)",
+    "1.14.4 (" + getString(R.string.protocol) + " 578)",
+    "1.15.2 (" + getString(R.string.protocol) + " 736)",
+    "1.17.1 (" + getString(R.string.protocol) + " 756)",
+    "1.18.2 (" + getString(R.string.protocol) + " 758)",
+    "1.19.4 (" + getString(R.string.protocol) + " 762)",
+    "1.20.4 (" + getString(R.string.protocol) + " 765)",
+    getString(R.string.auto)
 };
         
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, 
