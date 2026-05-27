@@ -5,6 +5,9 @@ plugins {
 def keystoreExists = file("keystore.jks").exists()
 
 android {
+    lint {
+        disable 'MissingTranslation'
+    }
     namespace "io.github.danielytbr.mcmotd"
     compileSdk 33
 
