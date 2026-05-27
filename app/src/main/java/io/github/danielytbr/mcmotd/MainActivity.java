@@ -49,17 +49,17 @@ public class MainActivity extends Activity {
         
         // Setup protocol spinner
         String[] protocols = {
-            "1.16.5 (Protocol 754)",
-            "1.8.9 (Protocol 47)",
-            "1.12.2 (Protocol 340)",
-            "1.13.2 (Protocol 404)",
-            "1.14.4 (Protocol 578)",
-            "1.15.2 (Protocol 736)",
-            "1.17.1 (Protocol 756)",
-            "1.18.2 (Protocol 758)",
-            "1.19.4 (Protocol 762)",
-            "1.20.4 (Protocol 765)",
-            "Auto-detect (Try all protocols)"
+            "1.16.5 (${R.string.protocol} 754)",
+            "1.8.9 (${R.string.protocol} 47)",
+            "1.12.2 (${R.string.protocol} 340)",
+            "1.13.2 (${R.string.protocol} 404)",
+            "1.14.4 (${R.string.protocol} 578)",
+            "1.15.2 (${R.string.protocol} 736)",
+            "1.17.1 (${R.string.protocol} 756)",
+            "1.18.2 (${R.string.protocol} 758)",
+            "1.19.4 (${R.string.protocol} 762)",
+            "1.20.4 (${R.string.protocol} 765)",
+            ${R.string.auto}
         };
         
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, 
@@ -161,7 +161,7 @@ public class MainActivity extends Activity {
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                tvDebug.append("Trying " + protoName + " (Protocol " + proto + ")...\n");
+                                tvDebug.append("Trying " + protoName + " (${R.string.protocol} " + proto + ")...\n");
                             }
                         });
                         
@@ -196,7 +196,7 @@ public class MainActivity extends Activity {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            tvDebug.append("Using " + protocolName + " (Protocol " + protocolVersion + ")\n");
+                            tvDebug.append("Using " + protocolName + " (${R.string.protocol} " + protocolVersion + ")\n");
                         }
                     });
                     
@@ -348,7 +348,7 @@ public class MainActivity extends Activity {
                 result.append("SERVER VERSION:\n");
                 result.append("───────────────────────────────────────\n");
                 result.append(version.getString("name")).append("\n");
-                result.append("Protocol: ").append(version.getInt("protocol")).append("\n\n");
+                result.append("${R.string.protocol}: ").append(version.getInt("protocol")).append("\n\n");
             }
             
             result.append("═══════════════════════════════════════\n");
