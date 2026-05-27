@@ -59,7 +59,7 @@ public class MainActivity extends Activity {
             "1.18.2 (${R.string.protocol} 758)",
             "1.19.4 (${R.string.protocol} 762)",
             "1.20.4 (${R.string.protocol} 765)",
-            ${R.string.auto}
+            R.string.auto
         };
         
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, 
