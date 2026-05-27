@@ -9,5 +9,7 @@
   <string name="output">Output</string>
   <string name="ready">Ready</string>
   <string name="debug_info">Debug</string>
+  <string name="trying">Trying</string>
+  
   <string name="error_ip_missing">Enter IP Address</string>
 </resources>
